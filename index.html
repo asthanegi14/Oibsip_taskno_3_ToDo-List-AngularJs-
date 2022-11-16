@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible"
+            content="IE=edge">
+      <meta name="viewport"
+            content="width=device-width, initial-scale=1.0">
+      <title>ToDoList</title>
+      <link rel="stylesheet"
+            href="style.css">
+      <link rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+      <link rel="preconnect"
+            href="https://fonts.googleapis.com">
+      <link rel="preconnect"
+            href="https://fonts.gstatic.com"
+            crossorigin>
+      <script src="angular.min.js"></script>
+      <script src="app.js"></script>
+</head>
+
+<body>
+      <div class="main"
+           ng-app="myToDoList"
+           ng-controller="myCtrl">
+            <h1>To Do List</h1>
+            <div class="search">
+                  <input type="text"
+                         placeholder="Write to add"
+                         ng-model="addMe">
+                  <span ng-click="addItem()"
+                        id="add">Add</span>
+            </div>
+            <ul>
+                  <li ng-repeat="x in products">{{x}} <i ng-click="removeItem($index)"
+                           class="bi bi-dash-circle"></i>
+                  </li>
+            </ul>
+            <p>{{errortext}}</p>
+      </div>
+</body>
+
+</html>

@@ -1,0 +1,92 @@
+body {
+    padding: 50px;
+    justify-content: center;
+    display: flex;
+    background-color: rgb(19, 61, 100);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.main {
+    width: 500px;
+    padding: 15px;
+    background-color: rgb(243, 239, 247);
+}
+
+h1 {
+    text-align: center;
+    font-family: 'Times New Roman';
+    font-size: 40px;
+    color: rgb(19, 61, 100);
+    margin: 10px;
+}
+
+input[type=text] {
+    width: 90%;
+    padding: 10px;
+    font-size: 16px;
+    margin-left: 8px;
+    border-radius: 3px;
+    border-style: none;
+    outline: none;
+}
+
+.search {
+    position: relative;
+}
+
+.search span {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    background: rgb(19, 61, 100);
+    padding: 10px;
+    display: flex;
+    cursor: pointer;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+ul li {
+    background: #fff;
+    margin: 5px;
+    padding: 10px;
+    border-right: 4px solid rgb(19, 61, 100);
+    border-left: 4px solid rgb(19, 61, 100);
+    color: rgb(102, 101, 101);
+}
+
+ul li i {
+    padding: 2px;
+    float: right;
+    color: black;
+    cursor: pointer;
+}
+
+p {
+    color: rgb(240, 53, 53);
+    text-align: center;
+}
+
+#add {
+    color: #fff;
+}
+
+#add:hover {
+    font-size: 120%;
+    top: -5px;
+    bottom: -5px;
+}
+
+.bi {
+    padding: 0px;
+    font-size: 15px;
+    color: black;
+
+}
+
+.bi:hover {
+    font-size: 20px;
+}
